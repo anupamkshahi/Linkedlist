@@ -12,6 +12,14 @@ class Node{
         this ->next = NULL;
     }
 };
+
+void InsertAtHead(Node* &head, int d){
+    Node* temp=new Node(d);
+    temp->next= head;
+    head=temp;
+
+}
+
 int main() {
     Node*node1 = new Node(10);
     cout<< node1 -> data <<endl;
